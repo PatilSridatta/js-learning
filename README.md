@@ -1,2 +1,2 @@
 # js-learning
-Learns javascript from basics
+Learn javascript from basics
