@@ -1,12 +1,19 @@
 import products from "./data/products";
 
 function App() {
+
+  const discountedProducts = products.map((product) => ({
+    ...product,
+    originalPrice : product.price,
+    price: product.price - (product.price * product.discount) / 100,
+  }));
   return (
     <div>
-      {products.map((product) => (
+      {discountedProducts.map((product) => (
         <div key={product.id}>
           <h1>{product.name}</h1>
-          <p>₹{product.price}</p>
+          <h2>Discounted Price : ₹{product.price}</h2>
+          <h3>Original Price : ₹{product.originalPrice}</h3>
           <p>{product.category}</p>
           <p>{product.brand}</p>
         </div>

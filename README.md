@@ -10,7 +10,7 @@ JavaScript, React, Next.js, and building a scalable web application.
 |---|---|---|
 | Day 1 | JavaScript Foundations | ✅ Completed |
 | Day 2 | Array Methods | ✅ Completed |
-| Day 3 | Reduce, Immutability & Spread | ⬜ Not Started |
+| Day 3 | Reduce, Immutability & Spread | ✅ Completed |
 | Day 4 | Promises & Async JavaScript | ⬜ Not Started |
 | Day 5 | Event Loop | ⬜ Not Started |
 

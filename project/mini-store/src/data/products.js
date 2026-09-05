@@ -6,6 +6,7 @@ const products = [
         category: "Electronics",
         inStock: true,
         brand: "Dell",
+        discount: 10,
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const products = [
         category: "Electronics",
         inStock: true,
         brand: "Apple",
+        discount: 10,
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const products = [
         category: "Accessories",
         inStock: true,
         brand: "Logitech",
+        discount: 10,
     },
 ];
 

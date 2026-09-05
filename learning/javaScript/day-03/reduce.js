@@ -66,7 +66,44 @@ const updatedProducts = products.map((product) => {
       price: 20000,
     };
   }
-  return product
+  return product;
 });
-console.log(products);
-console.log(updatedProducts);
+// console.log(products);
+// console.log(updatedProducts);
+
+const updatedPrice = products.map((product) => {
+  return {
+    ...product,
+    price: product.price + product.price * 0.1,
+  };
+});
+// console.log(updatedPrice);
+
+const user1 = {
+  name: "John",
+};
+
+const anotherUser = user1;
+anotherUser.name = "Mike";
+
+// console.log(user1.name);
+// console.log(anotherUser.name);
+
+// Assignment creates another reference to the same object, while object spread creates a new object with copied properties.
+
+const items = [
+  { name: "Laptop", price: 50000 },
+  { name: "Phone", price: 25000 },
+  { name: "Keyboard", price: 5000 },
+  { name: "Mouse", price: 2000 },
+];
+
+const budgetItems = items
+  .filter((item) => item.price < 30000)
+  .map((item) => ({
+    ...item,
+    price: item.price + item.price * 0.1,
+  }));
+
+console.log(items);
+console.log(budgetItems);
